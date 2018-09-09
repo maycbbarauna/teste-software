@@ -134,15 +134,6 @@ public class LancamentoControllerTest {
         }
     }
 
-    private Date obterDataAleatorios(){
-        Random random = new Random();
-        LocalDateTime dataHora = LocalDateTime.now();
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(dataHora.getYear(), dataHora.getMonth().getValue(), random.nextInt(25) + 1);
-        return calendar.getTime();
-    }
-
-
     public Lancamento criaLancamento(BigDecimal valor){
 
 
